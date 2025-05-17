@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>License Valuation</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"rel="stylesheet"/> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {
+      /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .icon-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .icon-box i {
+      font-size: 2rem;
+      color: #516300;
+    }
+    .testimonial {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/30a2db85a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container_fluid">
+      <nav>
+        <div class="header-text">
+          SoftSell
+        </div>
+        <!-- <img src="Images/logo3_Transparent.png" class="logo" alt="#" /> -->
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Customer Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Maximize the Value of Your Unused Licenses</h1>
+      <p class="lead">Quick, reliable, and secure license valuation and selling service.</p>
+      <a href="#contact" class="btn btn-lg btn-light mt-3">Sell My Licenses</a>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">How It Works</h2>
+      <div class="row">
+        <div class="col-md-4 icon-box">
+          <i class="fas fa-upload mb-2"></i>
+          <h5>Upload License</h5>
+          <p>Provide details of your software licenses securely.</p>
+        </div>
+        <div class="col-md-4 icon-box">
+          <i class="fa-solid fa-calculator"></i>
+          <h5>Get Valuation</h5>
+          <p>We assess and estimate the market value quickly.</p>
+        </div>
+        <div class="col-md-4 icon-box">
+          <i class="fas fa-money-bill-wave mb-2"></i>
+          <h5>Get Paid</h5>
+          <p>Receive payment directly once the license is verified.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Why Choose Us</h2>
+      <div class="row">
+        <div class="col-md-3 icon-box">
+          <i class="fas fa-shield-alt"></i>
+          <h6 class="mt-2">Secure Transactions</h6>
+          <p>We prioritize your privacy and license safety.</p>
+        </div>
+        <div class="col-md-3 icon-box">
+          <i class="fas fa-clock"></i>
+          <h6 class="mt-2">Fast Processing</h6>
+          <p>Most valuations completed within 24 hours.</p>
+        </div>
+        <div class="col-md-3 icon-box">
+          <i class="fas fa-users"></i>
+          <h6 class="mt-2">Expert Support</h6>
+          <p>Dedicated support every step of the way.</p>
+        </div>
+        <div class="col-md-3 icon-box">
+          <i class="fas fa-thumbs-up"></i>
+          <h6 class="mt-2">Trusted by Companies</h6>
+          <p>Hundreds of clients trust our expertise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container">
+    <h2>Testimonials</h2>
+    <h1>What our customers say</h1>
+    <div class="section__grid">
+      <div class="section__card">
+        <span><i class="ri-double-quotes-l"></i></span>
+        <h4>Love the simplicity</h4>
+        <p>
+          They understood our brand and created a stunning website design.
+          Professional, responsive, and on-time delivery. Highly recommended!
+        </p>
+        <img src="assets/Dummy1.jpg" alt="user" />
+        <h5>Allan Collins</h5>
+        <h6>Managing Director</h6>
+      </div>
+      <div class="section__card">
+        <span><i class="ri-double-quotes-l"></i></span>
+        <h4>Excellent Designs</h4>
+        <p>
+          Efficient, reliable, and results-oriented. Visually appealing
+          website, improved online visibility. Highly recommended!
+        </p>
+        <img src="assets/Dummy 2.jpg" alt="user" />
+        <h5>Tanya Grant</h5>
+        <h6>Ceo & Founder</h6>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Lead Form -->
+  <section class="bg-light py-5" id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="company" class="form-label">Company</label>
+          <input type="text" class="form-control" id="company">
+        </div>
+        <div class="col-md-6">
+          <label for="licenseType" class="form-label">License Type</label>
+          <select class="form-select" id="licenseType" required>
+            <option value="">Choose...</option>
+            <option>Software Suite</option>
+            <option>Cloud License</option>
+            <option>Enterprise License</option>
+          </select>
+          <div class="invalid-feedback">Please select a license type.</div>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+          <div class="invalid-feedback">Please write a message.</div>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Bootstrap validation
+    (() => {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+
+              
+var sidemeu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemeu.style.right = "0";
+  }
+  function closemenu() {
+    sidemeu.style.right = "-200px";
+  }
+
+  </script>
+</body>
+</html>
